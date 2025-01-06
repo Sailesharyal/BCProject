@@ -1,4 +1,4 @@
-table 50102 "Radio Show"
+table 50101 "Radio Show"
 {
     DataClassification = ToBeClassified;
 
@@ -59,6 +59,11 @@ table 50102 "Radio Show"
         {
             DataClassification = ToBeClassified;
 
+        }
+
+        field(11; "Host Code"; Code[20])
+        {
+            DataClassification = ToBeClassified;
         }
     }
 
