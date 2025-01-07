@@ -10,61 +10,116 @@ table 50101 "Radio Show"
 
         }
 
-        field(2; "Radio Show Type"; Code[10])
+        field(5; "Radio Show Type"; Code[10])
         {
             DataClassification = ToBeClassified;
         }
 
-        field(3; "Name"; Text[30])
+        field(10; "Name"; Text[30])
         {
             DataClassification = ToBeClassified;
 
         }
-        field(4; "Run Time"; Duration)
-        {
-            DataClassification = ToBeClassified;
-
-        }
-
-        field(5; "Host No."; Code[20])
+        field(15; "Run Time"; Duration)
         {
             DataClassification = ToBeClassified;
 
         }
 
-        field(6; "Host Name"; Text[50])
+        field(20; "Host No."; Code[20])
         {
             DataClassification = ToBeClassified;
 
         }
 
-        field(7; "Average Listeners"; Decimal)
+        field(25; "Host Name"; Text[50])
         {
             DataClassification = ToBeClassified;
 
         }
 
-        field(8; "Audience Share"; Decimal)
-        {
-            DataClassification = ToBeClassified;
-
-        }
-        field(9; "Advertising Revenue"; Decimal)
+        field(30; "Average Listeners"; Decimal)
         {
             DataClassification = ToBeClassified;
 
         }
 
-        field(10; "Royalty Cost"; Decimal)
+        field(35; "Audience Share"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+
+        }
+        field(40; "Advertising Revenue"; Decimal)
         {
             DataClassification = ToBeClassified;
 
         }
 
-        field(11; "Host Code"; Code[20])
+        field(45; "Royalty Cost"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+
+        }
+
+        field(50; "Host Code"; Code[20])
         {
             DataClassification = ToBeClassified;
         }
+
+        field(1000; "Frequency"; Option)
+        {
+            OptionMembers = "sailesh","Aryal";
+        }
+
+        field(1005; "PSA Planned Quantity"; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(1010; "Ads Planned Quantity"; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(1015; "New Required"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(1020; "News Duration"; Duration)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(1040; "Sports Required"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(1050; "Sports Duration"; Duration)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(1060; "Weather Required"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(1070; "Weather Duration"; Duration)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(1080; "Date Filter"; Date)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+
+
+
+
     }
 
     keys
@@ -77,7 +132,8 @@ table 50101 "Radio Show"
 
     fieldgroups
     {
-        // Add changes to field groups here
+        fieldgroup(DropDown; "No.", "Host No.", "Audience Share") { }
+
     }
 
     var
