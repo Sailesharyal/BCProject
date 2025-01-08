@@ -1,4 +1,4 @@
-table 50105 "Playlist Item Rate"
+table 50106 "Playlist Item Rate"
 {
     DataClassification = ToBeClassified;
 
@@ -7,7 +7,9 @@ table 50105 "Playlist Item Rate"
         field(1; "Source Type"; Option) { OptionMembers = Vendor,Customer; }
         field(2; "Source No."; Code[20])
         {
-
+            TableRelation = IF ("Source Type" = const(Vendor)) Vendor."No."
+            ELSE
+            IF ("Source Type" = const(Customer)) Customer."No.";
         }
         field(30; "Item No."; Code[20]) { }
         field(40; "Start Time"; Time) { }
@@ -17,13 +19,7 @@ table 50105 "Playlist Item Rate"
     }
 
 
-    keys
-    {
-        key(Key1; MyField)
-        {
-            Clustered = true;
-        }
-    }
+
 
     fieldgroups
     {
