@@ -12,7 +12,7 @@ table 50101 "Radio Show"
 
         field(5; "Radio Show Type"; Code[10])
         {
-            DataClassification = ToBeClassified;
+            TableRelation = "Radio Show Type";
         }
 
         field(10; "Name"; Text[30])
@@ -68,7 +68,7 @@ table 50101 "Radio Show"
 
         field(1000; "Frequency"; Option)
         {
-            OptionMembers = "sailesh","Aryal";
+            OptionMembers = Hourly,Daily,Weekly,Monthly;
         }
 
         field(1005; "PSA Planned Quantity"; Integer)
@@ -84,6 +84,7 @@ table 50101 "Radio Show"
         field(1015; "New Required"; Boolean)
         {
             DataClassification = ToBeClassified;
+            InitValue = true;
         }
 
         field(1020; "News Duration"; Duration)
@@ -94,6 +95,7 @@ table 50101 "Radio Show"
         field(1040; "Sports Required"; Boolean)
         {
             DataClassification = ToBeClassified;
+            InitValue = true;
         }
 
         field(1050; "Sports Duration"; Duration)
@@ -104,6 +106,7 @@ table 50101 "Radio Show"
         field(1060; "Weather Required"; Boolean)
         {
             DataClassification = ToBeClassified;
+            InitValue = true;
         }
 
         field(1070; "Weather Duration"; Duration)
