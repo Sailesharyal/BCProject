@@ -19,4 +19,11 @@ codeunit 50100 EventSuscription
 
     var
         myInt: Integer;
+
+
+    //     [EventSubscriber(ObjectType::Table, Database::, OnSomeEvent, 'ElementName', SkipOnMissingLicense, SkipOnMissingPermission)]
+    //     local procedure MyProcedure()
+    //     begin
+
+    //     end;
 }
