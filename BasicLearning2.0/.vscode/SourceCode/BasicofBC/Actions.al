@@ -78,6 +78,24 @@ page 50119 "Learning the Actions"
 
 
         }
+
+        area(Navigation)
+        {
+            action("Customer")
+            {
+                ApplicationArea = All;
+                Caption = 'To Cutsomer ID';
+                RunObject = page "Customer Card";
+            }
+            action("Sales")
+            {
+                ApplicationArea = All;
+                Caption = 'Go to Sales';
+                RunObject = page "Sales & Receivables Setup";
+            }
+        }
+
+
     }
 
 
