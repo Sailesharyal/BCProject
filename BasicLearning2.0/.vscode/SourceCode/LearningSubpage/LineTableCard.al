@@ -47,7 +47,7 @@ page 50125 "Line Table List"
 
                 trigger OnAction()
                 begin
-
+                    rec.TestField("Product Name", 'abc');
                 end;
             }
         }

@@ -7,5 +7,10 @@ tableextension 50101 SalesHeaderExt extends "Sales Header"
             Caption = 'Test';
             DataClassification = ToBeClassified;
         }
+
+        field(50250; "Information"; Code[50])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 }
