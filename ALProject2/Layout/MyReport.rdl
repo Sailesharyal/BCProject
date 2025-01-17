@@ -22,40 +22,6 @@
       <rd:DataSourceID>f99bd876-410b-471a-a643-7205933cd110</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="Posting_Date">
-          <DataField>Posting_Date</DataField>
-        </Field>
-        <Field Name="Item_No_">
-          <DataField>Item_No_</DataField>
-        </Field>
-        <Field Name="Source_No_">
-          <DataField>Source_No_</DataField>
-        </Field>
-        <Field Name="Document_No_">
-          <DataField>Document_No_</DataField>
-        </Field>
-        <Field Name="Sales_Amount__Actual_">
-          <DataField>Sales_Amount__Actual_</DataField>
-        </Field>
-        <Field Name="Sales_Amount__Actual_Format">
-          <DataField>Sales_Amount__Actual_Format</DataField>
-        </Field>
-        <Field Name="Cost_Amount__Actual_">
-          <DataField>Cost_Amount__Actual_</DataField>
-        </Field>
-        <Field Name="Cost_Amount__Actual_Format">
-          <DataField>Cost_Amount__Actual_Format</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -936,12 +902,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -1054,4 +1014,38 @@ h7MK3ZcjNZJzJLhZ6XkuY2NQ56fSRN4akiPyHKClap7s8PCsJuDtMLBlKmDlAaxO54TuFal+OOisgoKM
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Posting_Date">
+          <DataField>Posting_Date</DataField>
+        </Field>
+        <Field Name="Item_No_">
+          <DataField>Item_No_</DataField>
+        </Field>
+        <Field Name="Source_No_">
+          <DataField>Source_No_</DataField>
+        </Field>
+        <Field Name="Document_No_">
+          <DataField>Document_No_</DataField>
+        </Field>
+        <Field Name="Sales_Amount__Actual_">
+          <DataField>Sales_Amount__Actual_</DataField>
+        </Field>
+        <Field Name="Sales_Amount__Actual_Format">
+          <DataField>Sales_Amount__Actual_Format</DataField>
+        </Field>
+        <Field Name="Cost_Amount__Actual_">
+          <DataField>Cost_Amount__Actual_</DataField>
+        </Field>
+        <Field Name="Cost_Amount__Actual_Format">
+          <DataField>Cost_Amount__Actual_Format</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

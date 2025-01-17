@@ -1,21 +1,21 @@
-codeunit 50100 "LearningParameterandArguments"
-{
+// codeunit 50100 "LearningParameterandArguments"
+// {
 
-    procedure AddNumber(FirstNumber: Integer; SecondNumber: Integer): Integer
+//     procedure AddNumber(FirstNumber: Integer; SecondNumber: Integer): Integer
 
-    begin
-        exit(FirstNumber + SecondNumber);
-    end;
+//     begin
+//         exit(FirstNumber + SecondNumber);
+//     end;
 
-    procedure ByRefrences(var MyNumber: Integer);
-    begin
+//     procedure ByRefrences(var MyNumber: Integer);
+//     begin
 
-        MyNumber := MyNumber + 12;
+//         MyNumber := MyNumber + 12;
 
-    end;
+//     end;
 
-    var
+//     var
 
-        NewNumber: Integer;
+//         NewNumber: Integer;
 
-}
+// }
