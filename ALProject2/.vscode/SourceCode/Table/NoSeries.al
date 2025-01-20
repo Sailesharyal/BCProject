@@ -8,6 +8,13 @@ table 50130 "NoSeries"
         {
             DataClassification = ToBeClassified;
 
+
+        }
+
+        field(2; "For Number Series"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "No. Series";
         }
 
         field(5; "Student Name"; Text[50])

@@ -42,4 +42,5 @@ page 50130 "No Series Card"
 
     var
         myInt: Integer;
+        sa: page "Sales order";
 }
