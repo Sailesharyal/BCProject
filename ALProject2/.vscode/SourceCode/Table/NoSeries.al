@@ -9,6 +9,7 @@ table 50130 "NoSeries"
             DataClassification = ToBeClassified;
 
 
+
         }
 
         field(2; "For Number Series"; Code[20])
@@ -37,10 +38,15 @@ table 50130 "NoSeries"
     }
 
     var
-        myInt: Integer;
+        IsSalesRec: Record "Sales & Receivables Setup";
+        IsCodeUnit: Codeunit "NoSeriesManagement";
+
 
     trigger OnInsert()
     begin
+        if rec."Student Number" = '' then
+            IsSalesRec.Get();
+        IsCodeUnit.InitSeries(IsSalesRec."Student Code", IsSalesRec."Student Code", 0D, "For Number Series", "Student Number")
 
     end;
 

@@ -7,6 +7,7 @@ pageextension 50134 "Sales&RecivableCardExt" extends "Sales & Receivables Setup"
             field("Student Code"; Rec."Student Code")
             {
                 ApplicationArea = All;
+                TableRelation = "No. Series";
             }
         }
 
