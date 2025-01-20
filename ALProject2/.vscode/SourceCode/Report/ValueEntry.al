@@ -22,6 +22,11 @@ report 50100 MyReport
             column(Document_No_; "Document No.") { }
             Column(Sales_Amount__Actual_; "Sales Amount (Actual)") { }
             column(Cost_Amount__Actual_; "Cost Amount (Actual)") { }
+
+            dataitem(Customer; Customer)
+            {
+                DataItemLink = "No." = field("Source No.");
+            }
             trigger OnPreDataItem()
             begin
                 SetRange("Item Ledger Entry Type", "Value Entry"."Item Ledger Entry Type"::Sale);
@@ -40,7 +45,11 @@ report 50100 MyReport
             // begin
 
             // end;
+
+
         }
+
+
     }
 
     requestpage
